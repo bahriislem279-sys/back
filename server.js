@@ -28,4 +28,4 @@ const startServer = async () => {
 };
 
 startServer();
-app.use("/api", formRoutes);
+app.use("/api/demandes", formRoutes);
