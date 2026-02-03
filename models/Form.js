@@ -14,7 +14,7 @@ const formSchema = new mongoose.Schema(
             required: true
         },
         specialite: {
-            type: [String],
+            type: String,
             required: true,
             enum: ["MDW", "DSI"]
         },
@@ -23,17 +23,18 @@ const formSchema = new mongoose.Schema(
             required: true
         },
         typeStage: {
-            type: [String],
-            rquired: true,
+            type: String,
+            required: true,
             enum: ["perfectionnement", "pfe"]
         },
         message: {
             type: String,
 
         },
-        isApproved: {
-            type: Boolean,
-            default: false
+        status: {
+            type: String,
+            default: "en attend",
+            enum: ["en attend", "refus", "accepte"]
         }
     }
 )
