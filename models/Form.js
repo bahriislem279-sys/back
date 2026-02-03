@@ -30,6 +30,10 @@ const formSchema = new mongoose.Schema(
         message: {
             type: String,
 
+        },
+        isApproved: {
+            type: Boolean,
+            default: false
         }
     }
 )
