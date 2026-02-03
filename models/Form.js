@@ -7,7 +7,7 @@ const formSchema = new mongoose.Schema(
         },
         prenom: {
             type: String,
-            required: ture
+            required: true
         },
         email: {
             type: String,
