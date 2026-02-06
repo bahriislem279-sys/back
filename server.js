@@ -1,5 +1,5 @@
 const dns = require("dns"); // 👈 Add this first
-dns.setServers(["1.1.1.1"]);
+dns.setServers(["1.1.1.1"]); //stack overflow solution for MongoDB Atlas connection issues
 const cookieParser = require("cookie-parser");
 
 const express = require("express");
