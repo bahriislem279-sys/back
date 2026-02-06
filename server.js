@@ -10,7 +10,10 @@ require("dotenv").config();
 const { formRoutes } = require("./routes/formRoutes");
 const { authRoutes } = require("./routes/authRoutes");
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true, // مهم للسماح بالـ cookies
+}));
 const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cookieParser());
